@@ -1,4 +1,4 @@
-package private_algorithm.Baekjoon;
+package private_algorithm.Baekjoon.Week1;
 import java.util.Scanner;
 public class boj_10869 {
     public static void main(String[] args) {
