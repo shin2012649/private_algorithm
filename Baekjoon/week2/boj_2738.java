@@ -1,4 +1,4 @@
-package private_algorithm.Baekjoon.week2;
+package private_algorithm.Baekjoon.Week2;
 import java.util.Scanner;
 
 public class boj_2738 {
@@ -22,3 +22,4 @@ public class boj_2738 {
       }
   }
 }
+// 행렬덧셈

@@ -1,4 +1,4 @@
-package private_algorithm.Baekjoon.week2;
+package private_algorithm.Baekjoon.Week2;
 import java.util.Scanner;
 
 public class boj_10798 {
@@ -28,4 +28,5 @@ public class boj_10798 {
         System.out.println(result.toString());
     }
 }
+// 세로 읽기
 
