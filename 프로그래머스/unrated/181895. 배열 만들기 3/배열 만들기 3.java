@@ -1,9 +1,21 @@
 class Solution {
     public int[] solution(int[] arr, int[][] intervals) {
-        int[] answer = new int[intervals[0][1]-intervals[0][0]+intervals[1][1]-intervals[1][0]+2];
-        int n = 0;
-        for(int[] i: intervals)
-            for(int j=i[0];j<=i[1];j++) answer[n++] = arr[j];
-        return answer;
+        int a1 = intervals[0][0];
+        int b1 = intervals[0][1];
+        int a2 = intervals[1][0];
+        int b2 = intervals[1][1];
+
+        int[] result = new int[(b1 - a1 + 1) + (b2 - a2 + 1)];
+        int index = 0;
+
+        for (int i = a1; i <= b1; i++) {
+            result[index++] = arr[i];
+        }
+
+        for (int i = a2; i <= b2; i++) {
+            result[index++] = arr[i];
+        }
+
+        return result;
     }
 }
