@@ -31,10 +31,6 @@ public class Solution {
             return answer;
         }
     }
-
-    public static void main(String[] args) {
-        int[] arr = {0, 1, 1, 0, 1, 0, 0};
-        int[] result = solution(arr);
-        System.out.println(java.util.Arrays.toString(result));
-    }
 }
+
+ 
