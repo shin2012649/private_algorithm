@@ -1,11 +1,15 @@
-import java.math.BigInteger;
-
 class Solution {
     public String solution(String a, String b) {
-        BigInteger A = new BigInteger(a);
-        BigInteger B = new BigInteger(b);
-        BigInteger sum = A.add(B);
-        return sum.toString();
+        try {
+            int A = Integer.parseInt(a);
+            int B = Integer.parseInt(b);
+
+            String answer = String.valueOf(A + B);
+            return answer;
+        } catch (NumberFormatException e) {
+            // 정수로 변환할 수 없는 경우 처리할 내용
+            return "Error: Invalid input";
+        }
     }
 }
 
